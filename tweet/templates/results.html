@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{%if datas%}
+<div align="left">
+<h2>Last 20 Tweets of {{twit_id}}</b></h2>
+<ol>
+        {%for data in datas%}
+                <li>{{data}}</li>
+        {%endfor%}
+</ol>
+</div>{%endif%}
+{% endblock content %}
